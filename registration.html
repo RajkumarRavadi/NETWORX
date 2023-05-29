@@ -55,7 +55,9 @@
 </head>
 <body>
   <h2>Registration Form</h2>
-  <form action="https://example.com/submit-registration" method="POST">
+
+  <form id="registration-form" method="POST" onsubmit="handleFormSubmit(event)">
+  
     <label for="fullname">Full Name:</label>
     <input type="text" id="fullname" name="fullname" required>
     
